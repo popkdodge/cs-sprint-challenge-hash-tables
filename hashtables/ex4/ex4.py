@@ -3,6 +3,14 @@ def has_negatives(a):
     YOUR CODE HERE
     """
     # Your code here
+    b = {}
+    result = []
+    for number in a:
+        b[number] = -number
+    for number in a:
+        if -number in b:
+            if number > 0:
+                result.append(number)
 
     return result
 
